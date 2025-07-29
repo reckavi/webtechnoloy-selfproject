@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        div{
+            margin:200px auto;
+            border:1px solid grey;
+            height:400px;
+            width:500px;
+            background-color: rgba(88, 83, 83, 0.2);
+        }
+        body {
+            background-image: url("calc.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Age Calculator</h1>
+    <p>Enter your Birth Date and Birth Time:</p>
+    <input type="date" id="birthDate">
+    <input type="time" id="birthTime">
+    <br>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <h2 id="ageDisplay"></h2></div>
+
+    <script>
+        function calculateAge() {
+            // Get the user's birth date and time
+            const birthDateInput = document.getElementById("birthDate").value;
+            const birthTimeInput = document.getElementById("birthTime").value;
+
+            if (!birthDateInput || !birthTimeInput) {
+                document.getElementById("ageDisplay").innerText = "Please enter both birth date and time.";
+                return;
+            }
+
+            // Combine birth date and time into a single Date object
+            const birthDateTime = new Date(`${birthDateInput}T${birthTimeInput}`);
+            const now = new Date();
+
+            // Calculate the difference in milliseconds
+            let ageInMilliseconds = now - birthDateTime;
+
+            if (ageInMilliseconds < 0) {
+                document.getElementById("ageDisplay").innerText = "The birth date and time cannot be in the future.";
+                return;
+            }
+
+            // Calculate years, months, days, hours, minutes, and seconds
+            const years = now.getFullYear() - birthDateTime.getFullYear();
+            const months = (now.getMonth() + 12 - birthDateTime.getMonth()) % 12;
+            const days = Math.floor((ageInMilliseconds % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((ageInMilliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((ageInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((ageInMilliseconds % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("ageDisplay").innerHTML = 
+                `You are ${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds old.`;
+        }
+    </script>
+</body>
+</html>

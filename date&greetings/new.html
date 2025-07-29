@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <style>
+        body {
+            background-image: url("newyear.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin:200px auto;
+        }
+        h1{
+            color:gold;
+        }
+         h2 ,h3{
+            color: whitesmoke;
+        }
+        #countdown {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 New Year Countdown 🎉</h1>
+    <h3 id="current"></h3>
+    <h2 id="countdown"></h2>
+
+    <script>
+        function updateCountdown() {
+            // Get the current date and time
+            const now = new Date();
+
+            // Get the next New Year's date
+            const currentYear = now.getFullYear();
+            const nextNewYear = new Date(`January 1, ${currentYear + 1} 00:00:00`);
+
+            // Calculate the difference in milliseconds
+            const timeRemaining = nextNewYear - now;
+
+            // Extract days, hours, minutes, and seconds
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            document.getElementById("current").innerHTML=now;
+            // Display the countdown
+            document.getElementById("countdown").innerText = 
+                `${days} Days, ${hours} Hours, ${minutes} Minutes, and ${seconds} Seconds remaining until New Year!`;
+        }
+
+        // Update the countdown every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
