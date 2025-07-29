@@ -1,0 +1,34 @@
+<!--But flash is a common technique for audio and video in javascript-->
+<audio src="new/" controls>Tamil Song</audio>
+
+<!--we use controls for display and autoplay for automatically play & loop for after complete automatically start & 
+preload for when will the audio play, that information we give to server(3 use, "auto-load the audio when load the page", "none-load the audio when user click the play button ", "metadata- initially collect the information about audio and load when play")-->
+
+<!--preload make sense when not used the autoplay-->
+<audio src="new/aud.mpeg" controls autoplay>Tamil Song</audio><br>
+<audio src="new/aud.mpeg" controls autoplay loop>Tamil Song</audio><br>
+<audio src="new/aud.mpeg" controls preload="auto">Tamil Song</audio><br>
+<audio src="new/aud.mpeg" controls preload="none">Tamil Song</audio><br>
+<audio src="new/aud.mpeg" controls preload="metadata">Tamil Song</audio><br>
+
+<!--Suppose we want to work this in all the chrome, safari, any browser, we like this also used for multiple audio files in one tag-->
+
+<audio controls loop preload="auto">
+    <source src="new/aud.mpeg">
+    Geetha Govintham
+</audio><br>
+<video src="new/newyear.mp4" controls height="300" width="300"></video>
+<video src="new/newyear.mp4" controls height="300" width="300" muted></video> <!--muted is used for mute the video, if we does not use control, just image only shows , cannt play the video-->
+
+<video controls height="300" weight="300">
+    <source src="new/newyear.mp4" type="video/mp4">  <!--type is used to browser or server easily identify the type of the file-->
+    video format is not available                    <!--This passage display when the video or audio file cannot be load by browser-->
+</video>
+
+
+<!--for length videos , we host the video in youtube  and use in the website , also host the audio in soundcloud like platform, we use in our website
+but this are only available in html 5 only so better we use javascript flash-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ha2V04WWeZ8?si=bPeIlMLLQqcX7ijF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HEEDbumxl9g?si=dMEziAoI_NsE20OG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

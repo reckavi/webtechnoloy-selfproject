@@ -1,0 +1,168 @@
+<html>
+<style>
+.one{
+    background-color:red;
+    height:100px;
+    width:100px;
+    margin:5px;
+    left:500px; /*it does move any where bec it is in static*/
+}
+.two{
+    background-color:black;
+    height:100px;
+    width:100px;
+    margin:5px;
+}
+.three{
+    background-color:yellow;
+    height:100px;
+    width:100px;
+    margin:5px;
+}
+</style>
+
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+
+
+<!-- //default position:static -->
+</html>
+<html>
+<style>
+.one1{
+    background-color:red;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    left:50px;
+    top:50px;
+}
+.two2{
+    background-color:black;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    left:50px;
+    top:50px;
+}
+.three3{
+    background-color:yellow;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    
+}
+</style>
+
+<div class="one1"></div>
+<div class="two2"></div>
+<div class="three3"></div>
+
+
+
+</html>
+
+//zindex- which has max zindex that is top, which has minimum that is in bottom;
+</html>
+<html>
+<style>
+.one11{
+    background-color:red;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    z-index: 1;
+    left:100px;
+    top:100px;
+}
+.two22{
+    background-color:black;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    z-index: 2;
+    left:50px;
+    top:50px;
+}
+.three33{
+    background-color:yellow;
+    height:100px;
+    width:100px;
+    margin:5px;
+    position:relative;
+    z-index: 3;
+}
+</style>
+
+<div class="one11"></div>
+<div class="two22"></div>
+<div class="three33"></div>
+
+
+
+</html>
+
+//difference between relative and absolute
+
+<html>
+    <style>
+        .o1{
+            margin-top: 200px;
+            margin-left:100px;
+            border:solid black 2px;
+            width: 200px;
+            height: 100px;
+        
+        }
+        .h1{
+            position:relative;
+            left:40px;
+        }
+    </style>
+    <div class="o1"> <h1 class="h1"> Hello</h1></div>
+</html>
+<html>
+    <style>
+        .o2{
+            margin-top: 200px;
+            margin-left:100px;
+            border:solid black 2px;
+            width: 200px;
+            height: 100px;
+        
+        }
+        .h11{
+            position:absolute;
+            left:40px;
+        }
+    </style>
+    <div class="o2"> <h1 class="h11"> Hello</h1></div>
+</html>
+
+//if you want to move the absolute text from the box
+
+
+<html>
+    <style>
+        .o22{
+            margin-top: 200px;
+            margin-left:100px;
+            border:solid black 2px;
+            width: 200px;
+            height: 100px;
+            position:relative;
+        }
+        .h11{
+            position:absolute;
+            left:200px;
+        }
+    </style>
+    <div class="o22"> <h1 class="h11"> Hello</h1></div>
+</html>
+

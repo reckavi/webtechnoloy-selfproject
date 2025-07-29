@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signup.html">
+        <div>
+            <label>UserName</label>
+            <input>
+        </div>
+
+        <div>
+            <label>Password   </label>
+            <input>
+        </div>
+
+        <button>Signup</button>
+    </form>
+    <br>
+    <form action="signup.html" method="get">         <!--if i click the button , i need something happen so i use action
+                                                method is used for update the information in our database, basically two, post and get , post is for backend work(server), so we use get-->
+        <div>
+            <label>UserName</label>
+            <input name="UserName">
+        </div>
+
+        <div>
+            <label>Password   </label>
+            <input name="Password">
+        </div>
+
+        <button>Signup</button>
+    </form><br>
+<!-- we use the for in the label because that highlight the input box
+and you also mention type in inputbox that is for we only use that type in the input
+we use placeholder for mention inside the inputbox, name is used for identify the why the input box is, we also use id=name which is used for name attribute that is used for css work -->
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" id="UserName">
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password"> </label>
+            
+        </div>
+
+        <button type="submit">Signup</button> 
+    </form>
+    <br>
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name">
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password"> </label>
+            
+        </div>
+
+        <button type="submit">Signup</button> 
+    </form><br>
+<!-- we use the value for default name,
+in button, submit is for submit the form and reset for reset for reset the form to original -->
+    
+
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name" value="Bharkavi">
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password"> </label>
+            
+        </div>
+
+        <button type="submit">Signup</button> 
+        <button type="reset">Reset</button> 
+    </form><br>
+<!--size is used for old version but still we know that. maxlength is used for maximum length of the tex allowed-->
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name" size="12">
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password" maxlength="8"> </label>
+            
+        </div>
+
+        <button type="submit">Signup</button> 
+        <button type="reset">Reset</button> 
+    </form>
+    <br>
+    <!-- confirm we fill this box we use required -->
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name" size="12" required>
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password" maxlength="8" required minlength="5"> </label>
+            
+        </div>
+
+        <button type="submit">Signup</button> 
+        <button type="reset">Reset</button> 
+    </form>
+    <br>
+     <!-- we use type number and also we use minimum and maximum of year allowed -->
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name" size="12" required>
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password" maxlength="8" required minlength="5"> </label>
+            
+        </div>
+        <div>
+            <label for="Year">Year of Birth</label>
+            <input type="number" name="Year" placeholder="year" id="Year" maxlength="4" min="1990" max="2010" step="2 " >
+        </div>
+        <button type="submit">Signup</button> 
+        <button type="reset">Reset</button> 
+    </form><br>
+
+<!-- we use step for number input box increase or decrease arrow increament and decrement value -->
+    <form action="signup.html" method="get">
+        <div>
+            <label for="UserName">UserName</label>
+            <input type="text" name="UserName" placeholder="Enter your Name" size="12" required>
+        </div>
+
+        <div>
+            <label>Password  <input type="password" name="Password" placeholder="valid password" maxlength="8" required minlength="5"> </label>
+            
+        </div>
+        <div>
+            <label for="Year">Year of Birth</label>
+            <input type="number" name="Year" placeholder="year" id="Year" maxlength="4" min="1990" max="2010"  >
+        </div>
+        <div>
+            <label for="email">Email id</label>
+            <input type="email" name="email" placeholder="Enter Your Email id" id="email" required>
+        </div>
+        <div>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" placeholder="date" id="Year" maxlength="7" min="01/01/2006" max="12/12/2018"  >
+        </div>
+        <div>
+            <label for="url">Link</label>
+            <input type="url" name="url" placeholder="paste the link here"  required>
+        </div>
+        <div>
+            <label for="search">Search</label>
+            <input type="search" name="search" placeholder="search here"  required>
+        </div>
+        
+        <div>
+            <label for="about">Aboutme</label>
+            <textarea name="about" id="about" col="20" row="4">About Me....</textarea> 
+            <!-- we use col, row for html, but css is better than it -->
+        </div>
+        <button type="submit">Signup</button> 
+        <button type="reset">Reset</button> 
+        <!-- we use checkbox for check option. if choose any one only go to radio -->
+        <div><input type="checkbox" name="sms" id="sms"><label for="sms">SMS ALERT</label><!--</div>>
+        <div>--><input type="checkbox" name="mail" id="mail"><label for="sms">GMAIL ALERT</label></div>
+
+        <!--Radio button-we name same for one group but id is different for diff option but name same for particular(bec it is used for choose only one from that group)-->
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"> <!-- value is used for mention the gender=male or gender=female go to server. so we use value-->
+            <label for="female">Female</label>
+        </div>
+
+        <!--Drop down menu that is inside the select tag and give the name inside the option-->
+        <select name="state" id="state">
+            <option value="TN">TamilNadu</option>
+            <option value="Ker">Kerala</option>
+            <option value="AP">AndraPradesh</option>
+            <option value="kar" label="Karnataka"></option>  <!--We use like this also "label" for display-->
+        </select>
+
+
+        <select name="state" id="state" multiple>
+            <option value="TN">TamilNadu</option>
+            <option value="Ker">Kerala</option>
+            <option value="AP">AndraPradesh</option>
+            <option value="kar" label="Karnataka"></option>  <!--if we want to select more than one option from the dropdown menu we use "multiple"-->
+        </select>
+        <div>
+            <label for="tele">telephone</label>
+            <input type="tel" name="tele" placeholder="enter the tele.no"  required>
+        </div>
+        <div>
+            <label for="c">color</label>
+            <input type="color" name="c" placeholder="enter the tele.no"  required>
+        </div>
+        <!--the hidden is used for taken the information hiddenly to server but not visible to user. hidden mainly better in javascript work-->
+        <div>
+            <label for="hid">hidden</label>
+            <input type="hidden" name="hid" placeholder="enter the tele.no"  required>
+        </div>
+        
+    </form><br>
+    <form action="signup.html" method="get" enctype="multipart/form-data"><!--this enctype is used for store multiple data file to upload into a form-->
+        <div>
+            <label for="file">RESUME</label>
+            <input type="file" name="file" placeholder="enter the tele.no"  required>
+        </div>
+        <input type="image" src="new/image.png"width="50">
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
