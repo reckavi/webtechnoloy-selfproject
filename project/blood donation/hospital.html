@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Patient Records</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Donate Blood</a></li>
+                <li><a href="stock.html">Blood Stock</a></li>
+                <li><a href="reception.html">Reception</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="loginSection">
+            <h3>Login</h3>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="loginHospital()">Login</button>
+        </div>
+
+        <div id="patientSection" style="display:none;">
+            <table id="hospitalTable">
+                <tr><th>Name</th><th>Age</th><th>Disease</th></tr>
+            </table>
+            <button onclick="logoutHospital()">Logout</button>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
