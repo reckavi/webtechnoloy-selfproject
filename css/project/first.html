@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .class {
+            display:inline-block;
+            border:2px solid black;
+            width: 45vw; /* Adjust width for responsiveness */
+            height: 60vh; /* Adjust height for responsiveness */
+            max-width: 500px;
+            max-height: 800px;
+            flex:1;
+            
+            
+        }
+        #main{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:200px;
+            margin-left:20px;
+            margin-right: 20px;
+            width: 100%;
+            max-width: 90vw;
+            /* gap: 20px; */
+        }
+        header{
+            display:flex;
+            align-items:center;
+        }
+        header a{
+            text-decoration:none;
+            color:whitesmoke;
+        }
+        #msg{
+            flex:3;
+        }
+        nav{
+            flex:1;
+            display:flex;
+            padding:20px;
+        }
+        nav a{
+            flex:1;
+            margin-right:20px;
+            max-width:270px;
+            
+        }
+        .input{
+            display:block;
+            box-sizing:border-box; /*this is for we mention not taken extra space for padding or margin that is just with in box size*/
+            margin:5px 0px 5px 0px;
+            margin-left:20px;
+            width:80%;
+            overflow: hidden;
+            height:30px;
+            padding:10px;
+        }
+        .label{
+            /* padding:20px; */
+            display:block;
+            box-sizing:border-box; /*this is for we mention not taken extra space for padding or margin that is just with in box size*/
+            margin:20px 0px 5px 0px;
+            margin-left:20px;
+            
+        }
+        button{
+            width:90%;
+            height:40px;
+            margin:70px 10px;
+        }
+        
+        #result{
+            margin-left:10px;
+        }
+        .head{
+            width:100%;
+            background-color: black;
+            color:white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <header>
+            <a href="" id="msg">WELCOME TO OUR WEBSITE!</a>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <div id="main">
+    <div class="class form">
+    <form action="#">
+     <label for="" class="label">UserName</label>
+     <input type="text" class="input" required>
+     <br>
+     <label for="" class="label">Password</label>
+     <input type="Password" class="input" required>
+     <br>
+     <label for="" class="label">Email</label>
+     <input type="email" class="input" required>
+     <button type="submit">Login</button>
+    </div></form>
+    <div class="class" id="sec">
+        <h1>Welcome Guys!</h1>
+
+    </div></div>
+    <script>
+        const button=document.querySelector("button")
+        button.addEventListener('submit',display);
+        function display(){secondbox=document.querySelector(".sec");
+      login=document.createElement("div");
+      login.id='result'; //this is for styling in css
+      document.getElementById('sec').appendChild(login);
+      document.getElementById('result').innerHTML="You are successfully Login!";
+
+}
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* type selector */
+h2{
+    color:pink !important;
+}
+p{
+    color:green;
+}
+/* universal selector */
+*{
+    color:aqua;
+}
+/* id selector  |   id is used for specify the particular tag only but class is more preferable because it is easily give effect to more than one tag but id is prefer when you confirmly know
+which will we give the effect and also used when give the functionality using java scipt */
+#kavi{
+    color:blueviolet;
+}
+/* class selector */
+.k{
+    color:aquamarine;
+}
+.i{
+    color:blanchedalmond;
+}
+.o{
+    color:darkblue;
+}
+
+/* child selector */
+div>p{
+    color:black; /* this is also work withour > symbol if we want color only the child of div we use >*/
+}
+
+/* Descendant selector */
+div a{
+    color:palevioletred;
+}
+
+/* sibling selector */
+h1~h4{
+    color:palevioletred;
+}
+
+/* Adjacent sibling selector */
+h1+h2{
+    color:yellow;
+}

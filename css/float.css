@@ -1,0 +1,36 @@
+.col p,h2{
+    width:30%;
+    float:left;
+}
+.bluebox{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+    float:left;
+}
+
+.yellowbox{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    left:500px;
+    
+}
+.row p,h2{
+    width:30%;
+    float:right;
+}
+.col1 p,h2{
+    width:30%;
+    float:left;
+}
+.row2 p,h2{
+    width:30%;
+    float:right;
+}
+
+/*if you want to take one paragraph in div and align that position u use either id or else use below nth child*/
+.col1 p:nth-child(4){
+    clear:left;
+})

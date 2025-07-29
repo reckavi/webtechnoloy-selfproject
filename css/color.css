@@ -1,0 +1,29 @@
+/* CSS COLORS
+Keywords*/
+h1{
+    color:antiquewhite;
+}
+/* red, blue, green */
+h2{
+    color:rgb(255,255,255) ;
+    color:rgb(0,0,0);
+    color:rgb(255,0,0);
+    color:rgb(0,0,255);
+}
+/*Hex code*/
+h3{
+    color:#fff;
+    color:#000;
+    color:#00ff00;
+    color:#ff0000;
+    color:#0000ff;
+}
+/* HSL */
+h4{
+    color:hsl(100,33%,44%);
+    background-color: rgb(255,0,0);
+    background-color:rgba(255,0,0,.1)
+}
+/*rgba is just like rgb, a means how much transparency or opacity needed that range from 0 to 1 (1 is maximum opacity<min transparency> , nearly 0 minimum opacity<max transparency>*/
+
+

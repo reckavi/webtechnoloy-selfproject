@@ -1,0 +1,70 @@
+.box{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:linear-gradient(blue,yellow);
+}
+
+.box1{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:radial-gradient(blue,yellow);
+}
+.boxx{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:linear-gradient(to left, blue,yellow,green); /*likewise to left, to right, to top, to bottom or if you want side wise, you will give to top right, to bottom left (combined two)*/
+}
+
+.boxx1{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:radial-gradient(blue 30%,yellow,green); /*if you want that particular color occupy that percent*/
+}
+.boxxx{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:linear-gradient(190deg, blue ,yellow,green); /*if you want that particular color occupy that percent*/
+}
+.boxxx1{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:linear-gradient(to left, blue 30%,blue,yellow 30%,   yellow);
+}
+.boxxx2{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:radial-gradient( blue 30%,blue,yellow 30%,   yellow);
+}
+/*you want to mention degree you use above like*/
+.boxxx11{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:repeating-linear-gradient(blue 20px,yellow 30px);
+}
+.boxxx111{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:repeating-linear-gradient(blue,blue 20px,yellow,yellow 30px);
+}
+/*if you want solid use like above in repeating linear gradient*/
+.boxxx22{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:repeating-radial-gradient(blue 20px,yellow 30px);
+}
+.boxxx222{
+    height:400px;
+    width:400px;
+    margin:auto;
+    background:repeating-radial-gradient(blue,blue 20px,yellow,yellow 30px);
+}

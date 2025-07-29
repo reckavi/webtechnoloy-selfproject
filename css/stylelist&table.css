@@ -1,0 +1,71 @@
+#a{
+    list-style-type:circle;
+}
+#b{
+    list-style-type:disc;
+}
+#c{
+    list-style-type:square;
+}
+#d{
+    list-style-type:none;
+}
+#e{
+    list-style-type:upper-alpha;
+}
+#A{
+    list-style-type:lower-roman;
+}
+#B{
+    list-style-type:upper-roman;
+}
+#C{
+    list-style-type:decimal;
+}
+#D{
+    list-style-type:decimal-leading-zero
+}
+#E{
+    list-style-type:lower-alpha;
+}
+
+#f{
+    list-style-image:url("idea.png") ;
+}
+ul#par1{
+    list-style-position:inside;  /*if you put any shape next to inside it does not take . because list style only take position and shape but list style position only take position only*/
+}
+#par2{
+   list-style:inside square;
+}
+table{
+    width:300px;
+    
+
+}
+
+th{
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom:2px solid black;
+    padding:10px;
+}
+th,td.tab{
+    margin:auto;
+    text-align:center
+}
+table.tab{
+    margin:auto;
+    border-spacing:10px 20px;   /*this is for increase gap between the border*/
+}
+
+tr:nth-child(even){
+    background-color:whitesmoke;
+}
+#col{
+    border-collapse:collapse;  /*this is for u dont want any space between border*/
+}
+
+.t{
+    border-collapse:separate; /*this is for normal*/
+}

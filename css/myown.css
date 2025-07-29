@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 2px solid red;
+    background-color: orange;
+    justify-content: center;
+    
+  }
+  
+  .header {
+    flex: 0 0 10%; /* Header height */
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+  }
+  
+  .sidebar1,
+  .sidebar2 {
+    flex: 0 0 20%; /* Sidebar width */
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .main {
+    flex: 1;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .footer {
+    flex: 0 0 10%; /* Footer height */
+    text-align: center;
+    border: 1px solid black;
+  }
+  .header, .sidebar1, .main, .sidebar2, .footer {
+    display: flex;             /* Enable Flexbox for the element */
+    justify-content: center;   /* Horizontally center the content */
+    align-items: center;       /* Vertically center the content */
+    text-align: center;        /* Optional: Align text for multiline text */
+  }
+  

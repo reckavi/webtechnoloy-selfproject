@@ -1,0 +1,57 @@
+.para1{
+    background-color:aqua;
+}
+
+.para2{
+    background-color: cornsilk;
+}
+.para3{
+    background-color: cornflowerblue;
+}
+
+@media(min-width:800px){ /*below are mobile screen view we use min 800px and for we want our website only for desktop we use max-width */
+    .container p{
+        width:30%;
+        float:left;
+        padding:10px;
+    }
+}
+/*ipdium use pannalam*/
+@media screen and (min-width:800px){
+    .container p{
+        width:30%;
+        float:left;
+        padding:10px;
+    }
+    .para3{
+        background-color: cadetblue;
+    }
+}
+/*this print for when you try to print what shows in the print doc that it denotes*/
+@media print and  (min-width:800px){
+    .container p{
+        width:30%;
+        float:left;
+        padding:10px;
+    }
+}
+/*this is for sppech only*/
+@media speech and (min-width:800px){
+    .container p{
+        width:30%;
+        float:left;
+        padding:10px;
+    }
+    .para3{
+        background-color: cadetblue;
+    }
+}
+@media all and (max-width:800px){ /*this is design for desktop*/
+    .container p{
+        width:1000%;
+        float:left;
+        padding:10px;
+    }
+}
+
+/*all is default*/

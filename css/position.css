@@ -1,0 +1,96 @@
+.bluebox{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+    position:relative;
+}
+
+.yellowbox{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    /* left:500px; */
+    position:absolute;
+    top:10px;
+    
+}
+
+/* .bluerelative{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    position:relative;
+    margin-top:50px;
+}
+
+.yellowrelative{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    position:relative;
+    left:500px;
+}
+
+.blueabsolute{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+    position:relative;
+}
+
+.yellowabsolute{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    left:500px;
+    position:absolute;
+    top:0px;
+} */
+
+
+/*Absolute positioning (position: absolute) works relative to the nearest positioned ancestor.
+If no positioned ancestor exists, the reference is the viewport.
+To control the positioning relative to a specific element, ensure that:
+The parent has position: relative (or another non-static value).
+The absolutely positioned element is inside the parent in the HTML structure.*/
+
+
+/*But fixed is only refer from document, not see the parent and also it is fixed to the screen
+when scroll the screen*/
+.blueabsolute{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+    position:relative;
+}
+
+.yellowabsolute{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    left:500px;
+    position:fixed;
+    top:0px;
+}
+
+.bluerelative{
+    background-color: aquamarine;
+    width:300px;
+    height:300px;
+    position:sticky;
+    margin-top:50px;
+    top:0px;
+    bottom:0px;
+}
+
+.yellowrelative{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    position:absolute;
+    /* left:500px; */
+    top:100px;
+}

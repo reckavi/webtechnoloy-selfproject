@@ -1,0 +1,65 @@
+.Square{
+    width:100px;
+    height: 100px;
+    background-color: aquamarine;
+    border:2px solid aquamarine;
+    animation-name:square;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 20;
+    position:relative
+}
+@keyframes square {
+    0%{
+        left:0px;
+        right:0px;
+    }
+    100%{
+    border-radius:50%;
+    width:250px;
+    height:250px;
+    left:1000px;
+    top:500px;
+    background-color: cornflowerblue;
+    }
+    50%{
+        background-color: blueviolet;
+        transform: rotate(60deg);
+        left:200px;
+        top:200px;
+    }
+
+    75%{
+        background-color: aqua;
+        border-radius: 25% 25%;
+        left:1000px;
+        top:50px;
+        width:50px;
+
+    }
+    60%{
+        background-color: black;
+        left: 1fr;
+        right:1fr;
+        top: 1fr;
+        bottom: 1fr;
+    }
+
+
+}
+
+.sq{
+    width:300px;
+    height:100px;
+    background-color: aquamarine;
+    transition-duration:3s;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-timing-function:ease-in-out ;
+}
+.sq:hover{
+    width:200px;
+    height:200px;
+    background-color: blueviolet;
+    
+}

@@ -1,0 +1,81 @@
+body{
+    font-family:"Times New Roman",Serif;
+    font-size: 75%
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-shadow:6px 6px 1px blue;
+}
+h3{
+    font-family: "Comic Sans Ms",cursive;
+    font-size:2px;
+    font-weight:normal;
+    font-style:italic;
+    font-stretch:expanded;
+    text-transform: capitalize;
+    text-decoration:underline;
+    letter-spacing:25em;
+    word-spacing:5em;
+    text-align:center;
+    vertical-align:left;
+}
+div a{
+    text-decoration:none;
+}
+
+p{
+    line-height:1.5em;
+    text-align:justify;
+    text-indent:50px; /* this is for how much space when start*/
+
+}
+p:first-line{
+    font-size:large;
+}
+h1:first-letter{
+    font-size:70px;
+}
+/* if we want to color the visited link and unvisited link separately */
+a:visited {
+    color:brown;
+}
+a:hover{
+    color:pink;
+}
+a:active{
+    color:rgb(37, 4, 67); /*active is used for user know if they click the link or not for their knowledge*/
+
+}
+a:focus{
+    color: green;
+}
+/*this is used for p.k select the k class paragraph only*/
+p.k{
+   
+}
+/* or else we use below for select the paragraph which has particular attribute like class or id */
+p[id]{
+    color:pink;
+}
+p[class='k']{
+    color:blueviolet; /*I select particularly class = k*/
+}
+/* if i want to select the tag with multiple class name but we use only one class name that time we use ~ */
+p[class~="para"]{
+    color:rgb(21, 12, 2);  /*this is not mostly used, but still for known and also this is used not only class but also all the attributes*/
+}
+
+/*suppose you want to select the class start with this letter use ^"*/
+/* this is called prefix filtering*/
+p[class^="m"]{
+    color:yellow;
+}
+/*then below is suffix filtering*/
+p[class$="i"]{
+    color:aquamarine;
+}
+/*and also select using substring*/
+p[class*="p"]{
+    color:cadetblue;
+}

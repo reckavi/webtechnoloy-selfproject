@@ -1,0 +1,120 @@
+h1{
+    border:1px solid black;
+}
+
+p{
+    line-height:1.5em;
+    border:2px solid darkblue;
+    text-align:justify;
+    width:400px;
+    height:150px;
+    
+}
+
+h2{
+    border:5px solid green;
+    max-width:1800px; /*if you want to adjust your screen adapt for your device or adjusting the screen, u will use max-length*/
+
+}
+
+h3{
+    border:3px solid pink;
+    min-width:700px; /* if you want to fix particular size for you text*/
+
+}
+/* p[id="kavi"]{
+    border:3px solid aqua;
+    max-height:300px;
+    overflow:hidden;
+    border-top-style:dashed;
+} */
+p[id="ka"]{
+    border:3px dotted aqua;
+    max-height:300px;
+    overflow:scroll;
+}
+
+p#k{
+    /* border:3px solid aqua; */
+    border-width:3px;
+    border-style:double;
+    border-color:brown;
+    max-height:300px;
+    max-width:200px;
+    overflow:scroll;
+}
+p#ki{
+    /* border:3px solid aqua; */
+    border-width:3px 2px 3px 3px;
+    border-style:solid dotted dashed double;
+    border-color:brown blue blueviolet green;
+    max-height:300px; 
+    max-width:200px;
+    overflow:scroll;
+}
+/*if you use 4colors 1)top 2)right 3)bottom 4)left 
+suppose we use 3colors 1)top 2)right and left 3)bottom */
+
+h4{
+    border:2px solid black;
+    padding:0px;
+    margin:200px 200px 200px 200px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px; /* previously some website provide the border radius this is just for ur understand purpose*/
+
+
+}
+
+div{
+    border:2px solid black;
+    width:500px;
+    height:500px;
+    border-radius:80px 80px; /*like eliptical effect*/
+    box-shadow:10px 10px 5px grey;
+    -moz-box-shadow:10px 10px 5px grey;
+    -webkit-box-shadow:10px 10px 5px 20px grey; /*1st top or bottom 2nd left or right 3rd blur and last extraly for split shadow equally in all direction
+*/}
+
+div p{
+    border:30px solid;
+    border-image:url("image1.png")30 stretch ; 
+    margin:200px 50px 50px 50px ;
+     padding:2px;
+     -webkit-box-shadow:inset 10px 10px 5px 20px grey; /* inset for shadow inward into box , suppose values lam negative va irutha that shows outward*/
+}
+li{
+    display:inline;/*this is for print in the same line. if we put none, it does not display anything, block for takes one line wholy*/
+    margin:10px;/* margin is for separate each list to each other*/
+}
+
+/*block is used for suppose we use link in paragraph, if the para is in inline then link
+also continuously to para, but we want to take the link in separate line, that time
+we use block to the link*/
+
+#come{
+    display:none;
+}
+#coming{
+    visibility:hidden;
+}
+/* if we use display none right sidd element occcupies that space, but visibility hidden
+space not hide that is available still*/
+
+/* ***athavathu igga ennana h1 takes the width in full space because it is in default of display:block***
+
+***if i mention display:inline irutha ulla enna content irokko antha content eththa maari with edukkum***
+*** so athukku enna width and height koduthalum it never be takes that because it is in inline***
+<style>
+    h1{
+        background-color:red;
+        display:inline-block;
+        width:100px;
+        height:50px;
+
+    }
+</style>
+<h1>hello, how are you?</h1>
+*** even i mention inline-block i can adjust height or width but it is in still inline***
+***but i mention inline, i never be adjust the height or width***
+ */

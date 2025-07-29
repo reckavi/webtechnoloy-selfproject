@@ -1,0 +1,39 @@
+.layout{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10vh 80vh 10vh;/*this is for each row height*/
+    /*very important*/
+    grid-template-areas: 
+    "h h h h h"
+    "s1 m m m s2"
+    "f f f f f"
+    ;
+}
+.header{
+    grid-area: h;
+}
+.sidebar1{
+    grid-area: s1;
+}
+.sidebar2{
+    grid-area: s2;
+}
+.main{
+    grid-area: m;
+}
+.footer{
+    grid-area: f;
+}
+
+
+
+.layout div{
+    background-color: indianred;
+    border:1px solid black;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}

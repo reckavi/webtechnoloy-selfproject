@@ -1,0 +1,62 @@
+body{
+    /*background must be in desktop size*/ /*coolors website for color generator for beautiful website*/
+    background: url("wow.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.regform{
+    width:500px;
+    margin:120px auto;
+    background-color:rgba(72, 71, 71, 0.3);
+    color:white;
+    padding:10px 20px 30px;
+    font-size:25px;
+    border-radius: 15px; /*this is for rounded corner of form*/
+}
+.regform h3{
+    color:black;
+    font-style:inherit;
+    text-align:center;
+}
+.textlabel{
+    display:block; /*this is because i need only first 3 labels only arrange below and below*/
+}
+
+.input input{
+    width:100%;
+    font-size:1em; /*this is for letter size inside the input box*/
+    border: 1px solid;
+    box-shadow:2px;
+    border-radius: 8px;
+    padding:10px 10px; /*this is for space between input box and the content of the text inside that input box/ first for top&bottom 2nd for left and right*/
+    box-sizing:border-box; /*this is for we mention not taken extra space for padding or margin that is just with in box size*/
+    margin:5px 0px 5px 0px;/*space between username, email, password*/
+
+}
+
+input:focus{
+    background-color: rgb(198, 221, 242);/*this is for when touch the input box that change into another color*/
+
+}
+
+.btn{
+    text-align:center; /*we align the button div in center*/
+}
+
+button{
+    background-color:grey;
+    font-size:25px;
+    border-radius:15px 15px; /*this is for elliptical curve of button*/
+    border:1px solid grey;
+    font-style:initial;
+    margin-top:20px; /* this is for separate the radio male and female to reg button*/
+    padding:10px 10px; /* this for gap between button and inner content register text*/
+    box-shadow:2px;
+}
+
+.radio input{
+    accent-color:black;/*this is for what color inside the radio button*/
+    transform:scale(1.5);/*this is for increase or decrease the radio button*/
+    -ms-transform:scale(1.5);/*this two are not necessary but it work for all the user  browser, so we add it additionally*/
+    -webkit-transform:scale(1.5) ;
+}
