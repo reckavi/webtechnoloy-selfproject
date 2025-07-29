@@ -1,0 +1,33 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url("black.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper{
+    margin:200px auto;
+    display:grid;
+    border:1px solid grey;
+    background-color:rgba(107, 103, 103, 0.5);
+    color:whitesmoke;
+    width:500px;
+    height:400px;
+    justify-content: center;
+
+}
+
+#input{
+    width:200px;
+    height:100px;
+    margin-top:0px;
+}
+
+button{
+    width:80px;
+    height:50px;
+    display:flex;
+    justify-self: center;
+}

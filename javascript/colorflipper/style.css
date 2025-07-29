@@ -1,0 +1,36 @@
+html, body{
+    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#heading{
+    text-align:left;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-top: 15px;
+    font-size:32px;
+    color:crimson;
+   
+}
+#color{
+    float:right;
+    margin-right:15px;
+}
+
+#wrap{
+   
+    width:100vh;
+    height:90vh;
+    border-top:2px solid crimson;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width:100px;
+    height:50px;
+    color:whitesmoke;
+    background-color: red;
+    border-radius: 50% 50%;
+    border:2px solid red;
+}
+

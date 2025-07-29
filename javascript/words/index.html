@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Enter Your Paragraph</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Enter the paragraph as you want">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">How Many Words</button>
+        </div>
+        <div id="result">
+          <!-- this is for result -->
+        </div>
+    </div>
+    <script>
+      function convert(){
+        const name = (document.getElementById("input").value).trim()//this is get the element but i need only value of element.
+        const arr=name.split(' ');
+       
+        const res=arr.length;
+        const result = document.getElementById("result")
+        if(!name){
+          result.innerText =" Please Enter the paragraph!!";
+          return
+        }
+        result.innerHTML = res;
+      }
+      // let str1="He is so good"
+      // let str2="She is not bad"
+    </script>
+</body>
+</html>
